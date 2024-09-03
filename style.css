@@ -12,6 +12,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .calculator input,
 .calculator button {
@@ -19,15 +20,19 @@ body {
     height: 50px;
     font-size: 18px;
     margin: 2px;
+    cursor: pointer;
 }
 .calculator input {
     width: 212px;
     text-align: right;
     padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 .calculator button {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 .calculator button.operator {
     background-color: #f9a825;
@@ -36,4 +41,16 @@ body {
 .calculator button.equal {
     background-color: #4caf50;
     color: #fff;
+}
+.calculator button.memory {
+    background-color: #2196f3;
+    color: #fff;
+}
+.calculator button.memory:active {
+    background-color: #1976d2;
+}
+.calculator button.operator:hover,
+.calculator button.equal:hover,
+.calculator button.memory:hover {
+    opacity: 0.8;
 }

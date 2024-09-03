@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +7,15 @@
     <style>
         @import url(style.css);
     </style>
-    <script></script>
 </head>
-
 <body>
     <div class="calculator">
         <input type="text" id="display" disabled>
+        <br>
+        <button class="memory" onclick="clearMemory()">MC</button>
+        <button class="memory" onclick="recallMemory()">MR</button>
+        <button class="memory" onclick="addToMemory()">M+</button>
+        <button class="memory" onclick="subtractFromMemory()">M-</button>
         <br>
         <button onclick="clearDisplay()">C</button>
         <button onclick="appendToDisplay('/')">/</button>
@@ -35,10 +37,12 @@
         <br>
         <button onclick="appendToDisplay('0')">0</button>
         <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="appendToDisplay('%')">%</button>
+        <button onclick="appendToDisplay('√')">√</button>
+        <br>
         <button class="equal" onclick="calculate()">=</button>
     </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>
